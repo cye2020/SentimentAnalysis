@@ -40,7 +40,7 @@ class WordCloud {
         });
 
         this.words = {Positive: [], Neutral: [], Negative: [], All: []};
-        const colors = {Positive: 0, Neutral: 120, Negative: 240};
+        const colors = {Positive: 240, Neutral: 120, Negative: 0};
 
         Object.keys(this.wordFreq).forEach(word => {
             const sentiments = this.wordFreq[word].sentiments;
